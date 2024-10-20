@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #537c90, #361572);
+            background: linear-gradient(135deg, #345d67, #372a74);
             color: white;
             text-align: center;
             display: flex;
@@ -40,17 +40,13 @@
             font-size: 1.2em;
         }
 
-        .captcha-section {
-            margin-top: 20px;
-        }
-
         #download-popup {
             display: none;
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: #5d3259;
+            background: #444;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
@@ -60,7 +56,7 @@
             color: white;
         }
 
-        #download-popup .download-btn {
+        .download-btn {
             background-color: peachpuff;
             border: none;
             padding: 10px 20px;
@@ -70,7 +66,7 @@
             transition: background-color 0.3s ease;
         }
 
-        #download-popup .download-btn:hover {
+        .download-btn:hover {
             background-color: #ff9966;
         }
 
@@ -98,31 +94,20 @@
 
     <h1>47 Ways to Earn Passive Income: The Ultimate Guide!</h1>
 
-
-
-   
-
-    <div class="footer">By Tech Whisperer</div>
+    
 
     <div id="download-popup">
         <h2>Your Passive Income Guide</h2>
         <a href="Passive Income.pdf" download>
             <button class="download-btn">Download PDF</button>
         </a>
-        <br>
-        <button class="popup-close" onclick="closePopup()">Close</button>
     </div>
 
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfOpGYqAAAAAOlslDRbO7t2NQNTdkPRcGNGxQOP"></script>
+    <div class="footer">By Tech Whisperer</div>
+
     <script>
-
-
-        function closePopup() {
-            document.getElementById('download-popup').style.display = 'none';
-        }
-
-        // Listen for the reCAPTCHA completion
-        window.verifyCaptcha = verifyCaptcha;
+        // Show the download popup directly
+        document.getElementById('download-popup').style.display = 'block';
     </script>
 
 </body>
