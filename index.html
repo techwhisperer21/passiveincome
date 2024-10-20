@@ -3,61 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>47 Ways to Earn Passive Income</title>
+    <title>Earning Passive Income from AI</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #345d67, #372a74);
+            background: linear-gradient(135deg, #460d82, #8d558d);
             color: white;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
         }
 
-        h1 {
-            font-size: 2em;
-            margin: 20px 0;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
         }
 
-        .video-container {
-            width: 90%;
-            max-width: 560px;
-            margin-bottom: 20px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 315px;
-            border: none;
-        }
-
-        .footer {
-            margin-top: 20px;
+        .branding {
             font-size: 1.2em;
         }
 
-        #download-popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: #444;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
+        .subscribe-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        #download-popup h2 {
-            color: white;
+        .subscribe-btn:hover {
+            background-color: #cc0000;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+
+        .download-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .download-container {
+            background-color: #946bc57a;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .download-btn {
-            background-color: peachpuff;
+            background-color: rgba(255, 218, 185, 0.865);
+            color: black;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
@@ -70,13 +78,9 @@
             background-color: #ff9966;
         }
 
-        .popup-close {
-            color: white;
-            background: none;
-            border: none;
-            font-size: 1.5em;
-            cursor: pointer;
-            margin-top: 10px;
+        .footer {
+            margin-top: 40px;
+            font-size: 1.2em;
         }
 
         @media (max-width: 600px) {
@@ -84,31 +88,37 @@
                 font-size: 1.5em;
             }
 
-            iframe {
-                height: 200px;
+            .download-container {
+                width: 95%;
             }
         }
     </style>
 </head>
 <body>
 
-    <h1>47 Ways to Earn Passive Income: The Ultimate Guide!</h1>
+    <header>
+        <div class="branding">By Tech Whisperer</div>
+        <button class="subscribe-btn" onclick="window.location.href='https://www.youtube.com/channel/UC_1CMR2c1XAVhWcNLuv3HfA'">Subscribe</button>
+    </header>
 
-    
+    <h1>Earning Passive Income from AI</h1>
 
-    <div id="download-popup">
-        <h2>Your Passive Income Guide</h2>
-        <a href="Passive Income.pdf" download>
-            <button class="download-btn">Download PDF</button>
-        </a>
+    <div class="download-section">
+        <div class="download-container">
+            <h2>47 Ways to Earn Passive Income</h2>
+            <a href="Passive Income.pdf" download>
+                <button class="download-btn">Download PDF</button>
+            </a>
+        </div>
+        <div class="download-container">
+            <h2>10 ChatGPT Prompts that can make You Money!</h2>
+            <a href="1.pdf" download>
+                <button class="download-btn">Download PDF</button>
+            </a>
+        </div>
     </div>
 
     <div class="footer">By Tech Whisperer</div>
-
-    <script>
-        // Show the download popup directly
-        document.getElementById('download-popup').style.display = 'block';
-    </script>
 
 </body>
 </html>
